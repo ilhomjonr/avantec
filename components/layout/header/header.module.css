@@ -1,0 +1,120 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 4;
+  background: #ffffff;
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: calc(1440px + 32px);
+  width: 100%;
+  margin: 0 auto;
+  /* padding-block: 24px; */
+  padding: 24px;
+}
+.top {
+  display: flex;
+
+  border-bottom: 1px solid #ebebeb;
+}
+.top_inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: calc(1440px + 32px);
+  width: 100%;
+
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.contacts_left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--interface-medium);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+
+  color: #002856;
+}
+
+.email {
+  border-right: 1px solid #e3e3ed;
+  padding-right: 21px;
+}
+.number {
+  padding-left: 21px;
+}
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.contactus {
+  font-family: var(--interface-medium);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #1878f3;
+  padding: 8px 24px;
+  gap: 8px;
+  border: 1px solid #1878f3;
+  background-color: unset;
+  cursor: pointer;
+}
+.lngs {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px 0;
+  border: 1px solid #ebebeb;
+}
+.lngs > a {
+  font-family: var(--interface-medium);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #002856;
+  padding: 0 24px;
+}
+.lngs a:nth-child(1),
+.lngs a:nth-child(2) {
+  border-right: 1px solid #ebebeb;
+}
+.lngs a:active {
+  color: #1878f3;
+}
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  /* padding: 24px 0; */
+}
+.nav_link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--interface-medium);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #002856;
+  gap: 8px;
+}

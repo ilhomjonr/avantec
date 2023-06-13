@@ -1,0 +1,49 @@
+.missions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px;
+  border: 1.5px solid #ebebeb;
+}
+.mission_topper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+  flex-direction: column;
+  border-bottom: 1px solid #e3e3ed;
+  padding-bottom: 32px;
+}
+.left {
+  padding-right: 40px;
+  border-right: 1px solid #e3e3ed;
+}
+.right {
+  padding-left: 40px;
+}
+.topper_desc {
+  color: #020105;
+}
+
+.descs {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 40px;
+}
+
+.desc {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 80px;
+}
+.year {
+  font-family: var(--interface_semi);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  color: #002856;
+}

@@ -1,0 +1,120 @@
+.things_top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440px;
+  padding: 16px;
+  margin: 0 auto;
+}
+
+.things {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border: 1.5px solid #ebebeb;
+  border-bottom: unset;
+}
+.thing {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 24px;
+  padding: 40px 37px;
+}
+
+.thing:nth-child(odd),
+.thing:nth-child(2) {
+  border-right: 1px solid #ebebeb;
+}
+.thing > svg {
+  width: 56px;
+  height: 56px;
+}
+.thing_desc {
+  font-family: var(--interface-medium);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #002856;
+  max-width: 284px;
+}
+/* middle */
+.solution {
+  display: grid;
+  grid-template-columns: 0.6fr 0.4fr;
+  gap: 56px;
+  padding: 48px 40px;
+  border: 1.5px solid #ebebeb;
+}
+.top_info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.btns {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+  margin-bottom: 68px;
+}
+.dids {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.dids > .didwhat:nth-child(1),
+.dids > .didwhat:nth-child(2) {
+  border-right: 1px solid #e3e3ed;
+}
+.dids > .didwhat:nth-child(1) {
+  padding-right: 50px;
+}
+
+.dids > .didwhat:nth-child(2) {
+  padding: 0 44px;
+}
+.dids > .didwhat:nth-child(3) {
+  padding-left: 50px;
+}
+.didwhat {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  flex-direction: column;
+}
+.did_title {
+  font-family: var(--interface-medium);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #002856;
+}
+.did_numb {
+  font-family: var(--bebas);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 110%;
+  leading-trim: both;
+  text-edge: cap;
+  color: #002856;
+}
+.did_desc {
+  font-family: var(--interface-medium);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #9a999b;
+}
+.image > img {
+  width: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,96 @@
+.intro {
+  background-image: url(../../public/media/backintro.png);
+
+  padding: 120px 0 56px 0;
+}
+
+.box {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  display: grid;
+  grid-template-columns: 0.8fr 0.2fr;
+  max-width: 1440px;
+  padding: 0 24px;
+  margin: 0 auto;
+  position: relative;
+  gap: 50px;
+  z-index: 3;
+}
+.info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.info_top {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  max-width: 712px;
+}
+.title {
+  font-family: var(--bebas-bold);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 110%;
+  color: #002856;
+  text-transform: uppercase;
+}
+.desc {
+  font-family: var(--interface);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #353437;
+  max-width: 554px;
+}
+.btns {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 24px;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 838px;
+  margin-top: 100px;
+}
+.advantage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+}
+.advant_svg,
+.advant_svg > svg {
+  width: 48px;
+  height: 48px;
+}
+.advantage_desc {
+  font-family: var(--interface-medium);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #002856;
+}
+.image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+.image > img {
+  width: 100%;
+}

@@ -1,0 +1,73 @@
+.footer {
+  background-color: #001935;
+}
+.box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  padding: 56px 0;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+}
+.email,
+.contacts_btm {
+  font-family: var(--interface-medium);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 24px;
+  color: #ffffff;
+}
+.location {
+  max-width: 315px;
+}
+.social_media {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 40px;
+}
+.company {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 16px;
+}
+.title {
+  font-family: var(--interface-semi);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ffffff;
+}
+.foot_link {
+  font-family: var(--interface);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #7c8fa6;
+}
+.service {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
