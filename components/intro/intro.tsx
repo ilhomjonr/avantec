@@ -18,11 +18,11 @@ export default function Intro() {
             </div>
             <div className={styles.btns}>
               <button className={`primary_btn`}>Свяжется с нами</button>
-              <button className={`secondary_btn`}>Каталог продукции</button>
+              <button className={`secondary_btn ${styles.right}`}>Каталог продукции</button>
             </div>
             <div className={styles.bottom}>
               <div className={styles.advantage}>
-                <div className={styles.advant_svg}>{hand_stars}</div>{" "}
+                <div className={styles.advant_svg}>{hand_stars}</div>
                 <p className={styles.advantage_desc}>
                   Огромное количество благодарных клиентов
                 </p>

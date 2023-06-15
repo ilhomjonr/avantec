@@ -42,8 +42,8 @@ const Header = () => {
               <button className={styles.contactus}>Свяжется с нами</button>
 
               <nav className={styles.lngs}>
-                <Link href={"/"}>Eng</Link>
                 <Link href={"/"}>Рус</Link>
+                <Link href={"/"}>Eng</Link>
                 <Link href={"/"}>Uzb</Link>
               </nav>
             </div>

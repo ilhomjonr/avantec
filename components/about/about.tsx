@@ -1,26 +1,26 @@
 import styles from "./about.module.css";
-import { catalog1, catalog2, catalog3, catalog4 } from "../../public/icon";
+
 import Image from "next/image";
 export default function About() {
   const things = [
     {
-      logo: catalog1,
+      logo: "/media/catalog1.png",
       desc: "Производство больших партий",
     },
     {
-      logo: catalog2,
+      logo: "/media/catalog2.png",
       desc: "Высокая точность работы и качество деталей",
     },
     {
-      logo: catalog3,
+      logo: "/media/catalog3.png",
       desc: "Обработка заготовок из различных металлов",
     },
     {
-      logo: catalog4,
+      logo: "/media/catalog4.png",
       desc: "Изготовление деталей любой конфигурации и сложности",
     },
   ];
-  const donethings = [{}];
+
   return (
     <section>
       <div className={styles.things_top}>
@@ -28,7 +28,14 @@ export default function About() {
           {things.map((thing: any, i: number) => {
             return (
               <div key={i} className={styles.thing}>
-                {thing.logo}
+                <div className={styles.img}>
+                  <Image
+                    src={thing.logo}
+                    width={56}
+                    height={56}
+                    alt="catalog products"
+                  />
+                </div>
                 <p className={styles.thing_desc}>{thing.desc}</p>
               </div>
             );
@@ -36,7 +43,7 @@ export default function About() {
         </div>
         <div className={styles.solution}>
           <div className={styles.top_info}>
-            <p className="section_title">
+            <p className={`${styles.section_title} section_title`}>
               развитие, применение новейших технологий и инновационных решений{" "}
             </p>
             <p className="section_desc">
@@ -65,12 +72,12 @@ export default function About() {
               <div className={styles.didwhat}>
                 <p className={styles.did_title}>Оснащено техники</p>
                 <p className={styles.did_numb}>1500</p>
-                <p className={styles.did_desc}>стран</p>
+                <p className={styles.did_desc}>единиц</p>
               </div>
               <div className={styles.didwhat}>
                 <p className={styles.did_title}>Реализовано</p>
                 <p className={styles.did_numb}>600</p>
-                <p className={styles.did_desc}>стран</p>
+                <p className={styles.did_desc}>проекта</p>
               </div>
             </div>
           </div>

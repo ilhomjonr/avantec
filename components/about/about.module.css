@@ -28,9 +28,11 @@
 .thing:nth-child(2) {
   border-right: 1px solid #ebebeb;
 }
-.thing > svg {
+
+.img > img {
   width: 56px;
   height: 56px;
+  object-fit: contain;
 }
 .thing_desc {
   font-family: var(--interface-medium);
@@ -48,6 +50,9 @@
   gap: 56px;
   padding: 48px 40px;
   border: 1.5px solid #ebebeb;
+}
+.section_title {
+  max-width: 548px;
 }
 .top_info {
   display: flex;
@@ -97,13 +102,12 @@
   color: #002856;
 }
 .did_numb {
-  font-family: var(--bebas);
+  font-family: var(--bebas-bold);
   font-style: normal;
   font-weight: 400;
   font-size: 64px;
   line-height: 110%;
-  leading-trim: both;
-  text-edge: cap;
+
   color: #002856;
 }
 .did_desc {

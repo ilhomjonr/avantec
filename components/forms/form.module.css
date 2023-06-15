@@ -1,0 +1,114 @@
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 80px 0;
+  gap: 60px;
+}
+.form {
+  background-image: url(../../public/media/formback.png);
+}
+.title,
+.title > span {
+  font-family: var(--bebas-bold);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 110%;
+  color: #ffffff;
+}
+.title > span {
+  color: #1878f3;
+}
+.desc {
+  font-family: var(--interface);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #798a9d;
+}
+.left {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  max-width: 578px;
+}
+.banner_form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+}
+.banner_form_top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.name {
+  background-color: transparent;
+  border-top: unset;
+  border-left: unset;
+  border-right: unset;
+  border-bottom: 1px solid #849ebc;
+  padding-bottom: 16px;
+}
+.formwrapper {
+  display: flex;
+  border-bottom: 1px solid #849ebc;
+  align-items: center;
+}
+.number {
+  width: 100%;
+  background-color: transparent;
+  border: unset;
+  padding-bottom: 16px;
+}
+.formwrapper > span {
+  padding-bottom: 16px;
+}
+.number::placeholder,
+.number,
+.name,
+.name::placeholder,
+.formwrapper > span {
+  font-family: var(--interface);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #7388a0;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 125px;
+  gap: 8px;
+  width: 100%;
+  background: #1878f3;
+  font-family: var(--interface);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ffffff;
+  border: none;
+}
+.name:active,
+.name:focus,
+.name:focus-visible {
+  outline: none;
+}
+.number:active,
+.number:focus,
+.number:focus-visible {
+  outline: none;
+}

@@ -17,6 +17,9 @@
   gap: 50px;
   z-index: 3;
 }
+.right {
+  background: #f5f5f7;
+}
 .info {
   display: flex;
   align-items: flex-start;
@@ -85,6 +88,7 @@
   line-height: 150%;
   color: #002856;
 }
+
 .image {
   position: absolute;
   right: 0;
@@ -93,4 +97,15 @@
 }
 .image > img {
   width: 100%;
+}
+.bottom .advantage:nth-child(1) .advantage_desc {
+  width: 190px;
+}
+
+.bottom .advantage:nth-child(2) .advantage_desc {
+  width: 140px;
+}
+
+.bottom .advantage:nth-child(3) .advantage_desc {
+  width: 225px;
 }
