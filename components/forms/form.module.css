@@ -101,6 +101,7 @@
   line-height: 150%;
   color: #ffffff;
   border: none;
+  cursor: pointer;
 }
 .name:active,
 .name:focus,
@@ -111,4 +112,40 @@
 .number:focus,
 .number:focus-visible {
   outline: none;
+}
+@media (max-width: 1300px) {
+  .box {
+    padding: 40px 16px;
+    gap: 40px;
+  }
+  .title,
+  .title span {
+    font-family: var(--bebas-bold);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 110%;
+    /* or 40px */
+  }
+  .left {
+    gap: 16px;
+  }
+  .banner_form_top {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .banner_form {
+    align-items: unset;
+    gap: 20px;
+  }
+}
+@media (max-width: 760px) {
+  .box {
+    flex-direction: column;
+  }
+}
+@media (max-width: 425px) {
+  .form_cont {
+    width: 100%;
+  }
 }

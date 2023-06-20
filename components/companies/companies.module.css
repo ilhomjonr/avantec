@@ -43,3 +43,16 @@
 .left svg {
   transform: rotate(180deg);
 }
+@media (max-width: 880px) {
+  .navigation {
+    display: none;
+  }
+  .box {
+    padding: 0;
+    border: unset;
+  }
+
+  .title {
+    padding-left: 16px;
+  }
+}

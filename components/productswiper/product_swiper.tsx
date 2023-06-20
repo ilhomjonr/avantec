@@ -18,6 +18,12 @@ export default function ProductSwiper() {
       <div className={`box ${styles.box}`}>
         <div className={styles.alls}>
           <Swiper
+            modules={[Autoplay, Pagination, Navigation]}
+            // breakpoints={{
+            //   0: { pagination: true },
+
+            //   880: { pagination: false },
+            // }}
             slidesPerView={1}
             loop={true}
             spaceBetween={30}
@@ -25,12 +31,16 @@ export default function ProductSwiper() {
               delay: 2500,
               disableOnInteraction: false,
             }}
+            // pagination={true}
             navigation={{ prevEl, nextEl }}
-            modules={[Autoplay, Pagination, Navigation]}
             className="mySwiper"
           >
             <SwiperSlide>
               <div className={styles.all}>
+                <p className={`section_title  ${styles.title_mb}`}>
+                  развитие, применение новейших технологий и инновационных
+                  решений
+                </p>
                 <div className={styles.left}>
                   <div className={styles.img_cont}>
                     <Image
@@ -47,7 +57,7 @@ export default function ProductSwiper() {
                   </p>
                 </div>
                 <div className={styles.right}>
-                  <p className={`section_title ${styles.title}`}>
+                  <p className={`section_title ${styles.title} `}>
                     развитие, применение новейших технологий и инновационных
                     решений
                   </p>
@@ -75,6 +85,10 @@ export default function ProductSwiper() {
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.all}>
+                <p className={`section_title  ${styles.title_mb}`}>
+                  развитие, применение новейших технологий и инновационных
+                  решений
+                </p>
                 <div className={styles.left}>
                   <div className={styles.img_cont}>
                     <Image
@@ -91,7 +105,7 @@ export default function ProductSwiper() {
                   </p>
                 </div>
                 <div className={styles.right}>
-                  <p className={`section_title ${styles.title}`}>
+                  <p className={`section_title ${styles.title} `}>
                     развитие, применение новейших технологий и инновационных
                     решений
                   </p>
@@ -119,6 +133,10 @@ export default function ProductSwiper() {
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.all}>
+                <p className={`section_title  ${styles.title_mb}`}>
+                  развитие, применение новейших технологий и инновационных
+                  решений
+                </p>
                 <div className={styles.left}>
                   <div className={styles.img_cont}>
                     <Image
@@ -135,7 +153,7 @@ export default function ProductSwiper() {
                   </p>
                 </div>
                 <div className={styles.right}>
-                  <p className={`section_title ${styles.title}`}>
+                  <p className={`section_title ${styles.title} `}>
                     развитие, применение новейших технологий и инновационных
                     решений
                   </p>
@@ -163,6 +181,10 @@ export default function ProductSwiper() {
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.all}>
+                <p className={`section_title  ${styles.title_mb}`}>
+                  развитие, применение новейших технологий и инновационных
+                  решений
+                </p>
                 <div className={styles.left}>
                   <div className={styles.img_cont}>
                     <Image
@@ -179,7 +201,7 @@ export default function ProductSwiper() {
                   </p>
                 </div>
                 <div className={styles.right}>
-                  <p className={`section_title ${styles.title}`}>
+                  <p className={`section_title ${styles.title} `}>
                     развитие, применение новейших технологий и инновационных
                     решений
                   </p>
@@ -207,6 +229,10 @@ export default function ProductSwiper() {
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.all}>
+                <p className={`section_title  ${styles.title_mb}`}>
+                  развитие, применение новейших технологий и инновационных
+                  решений
+                </p>
                 <div className={styles.left}>
                   <div className={styles.img_cont}>
                     <Image
@@ -223,7 +249,247 @@ export default function ProductSwiper() {
                   </p>
                 </div>
                 <div className={styles.right}>
-                  <p className={`section_title ${styles.title}`}>
+                  <p className={`section_title ${styles.title} `}>
+                    развитие, применение новейших технологий и инновационных
+                    решений
+                  </p>
+                  <div className={styles.right_desc}>
+                    <p>
+                      ООО "AVANTEC GP" предоставляет свои услуги по обработке
+                      деталей с 2017 года. Грамотная организация
+                      производственных процессов и применение инновационных
+                      методов обработки позволяют существенно сократить рабочее
+                      время сохраняя при этом стабильно высокое качество деталей
+                    </p>
+                    <p>
+                      Современное оборудование, а также штат
+                      высококвалифицированных сотрудников позволяют фирме
+                      «Сергели Металл Конструкция» эффективно выполнять даже
+                      самые сложные заказы, в установленные сроки и с
+                      конкурентоспособной ценовой стратегией.
+                    </p>
+                  </div>
+                  <div className={styles.btm}>
+                    <button className="secondary_btn">Подробнее</button>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.all}>
+                <p className={`section_title  ${styles.title_mb}`}>
+                  развитие, применение новейших технологий и инновационных
+                  решений
+                </p>
+                <div className={styles.left}>
+                  <div className={styles.img_cont}>
+                    <Image
+                      src="/media/product.png"
+                      width={503}
+                      height={328}
+                      alt=""
+                      className={styles.img}
+                    />
+                  </div>
+                  <p className={styles.left_desc}>
+                    iXpanel - i4.0 ready Высокопроизводительный токарный автомат
+                    INDEX C100
+                  </p>
+                </div>
+                <div className={styles.right}>
+                  <p className={`section_title ${styles.title} `}>
+                    развитие, применение новейших технологий и инновационных
+                    решений
+                  </p>
+                  <div className={styles.right_desc}>
+                    <p>
+                      ООО "AVANTEC GP" предоставляет свои услуги по обработке
+                      деталей с 2017 года. Грамотная организация
+                      производственных процессов и применение инновационных
+                      методов обработки позволяют существенно сократить рабочее
+                      время сохраняя при этом стабильно высокое качество деталей
+                    </p>
+                    <p>
+                      Современное оборудование, а также штат
+                      высококвалифицированных сотрудников позволяют фирме
+                      «Сергели Металл Конструкция» эффективно выполнять даже
+                      самые сложные заказы, в установленные сроки и с
+                      конкурентоспособной ценовой стратегией.
+                    </p>
+                  </div>
+                  <div className={styles.btm}>
+                    <button className="secondary_btn">Подробнее</button>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.all}>
+                <p className={`section_title  ${styles.title_mb}`}>
+                  развитие, применение новейших технологий и инновационных
+                  решений
+                </p>
+                <div className={styles.left}>
+                  <div className={styles.img_cont}>
+                    <Image
+                      src="/media/product.png"
+                      width={503}
+                      height={328}
+                      alt=""
+                      className={styles.img}
+                    />
+                  </div>
+                  <p className={styles.left_desc}>
+                    iXpanel - i4.0 ready Высокопроизводительный токарный автомат
+                    INDEX C100
+                  </p>
+                </div>
+                <div className={styles.right}>
+                  <p className={`section_title ${styles.title} `}>
+                    развитие, применение новейших технологий и инновационных
+                    решений
+                  </p>
+                  <div className={styles.right_desc}>
+                    <p>
+                      ООО "AVANTEC GP" предоставляет свои услуги по обработке
+                      деталей с 2017 года. Грамотная организация
+                      производственных процессов и применение инновационных
+                      методов обработки позволяют существенно сократить рабочее
+                      время сохраняя при этом стабильно высокое качество деталей
+                    </p>
+                    <p>
+                      Современное оборудование, а также штат
+                      высококвалифицированных сотрудников позволяют фирме
+                      «Сергели Металл Конструкция» эффективно выполнять даже
+                      самые сложные заказы, в установленные сроки и с
+                      конкурентоспособной ценовой стратегией.
+                    </p>
+                  </div>
+                  <div className={styles.btm}>
+                    <button className="secondary_btn">Подробнее</button>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.all}>
+                <p className={`section_title  ${styles.title_mb}`}>
+                  развитие, применение новейших технологий и инновационных
+                  решений
+                </p>
+                <div className={styles.left}>
+                  <div className={styles.img_cont}>
+                    <Image
+                      src="/media/product.png"
+                      width={503}
+                      height={328}
+                      alt=""
+                      className={styles.img}
+                    />
+                  </div>
+                  <p className={styles.left_desc}>
+                    iXpanel - i4.0 ready Высокопроизводительный токарный автомат
+                    INDEX C100
+                  </p>
+                </div>
+                <div className={styles.right}>
+                  <p className={`section_title ${styles.title} `}>
+                    развитие, применение новейших технологий и инновационных
+                    решений
+                  </p>
+                  <div className={styles.right_desc}>
+                    <p>
+                      ООО "AVANTEC GP" предоставляет свои услуги по обработке
+                      деталей с 2017 года. Грамотная организация
+                      производственных процессов и применение инновационных
+                      методов обработки позволяют существенно сократить рабочее
+                      время сохраняя при этом стабильно высокое качество деталей
+                    </p>
+                    <p>
+                      Современное оборудование, а также штат
+                      высококвалифицированных сотрудников позволяют фирме
+                      «Сергели Металл Конструкция» эффективно выполнять даже
+                      самые сложные заказы, в установленные сроки и с
+                      конкурентоспособной ценовой стратегией.
+                    </p>
+                  </div>
+                  <div className={styles.btm}>
+                    <button className="secondary_btn">Подробнее</button>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.all}>
+                <p className={`section_title  ${styles.title_mb}`}>
+                  развитие, применение новейших технологий и инновационных
+                  решений
+                </p>
+                <div className={styles.left}>
+                  <div className={styles.img_cont}>
+                    <Image
+                      src="/media/product.png"
+                      width={503}
+                      height={328}
+                      alt=""
+                      className={styles.img}
+                    />
+                  </div>
+                  <p className={styles.left_desc}>
+                    iXpanel - i4.0 ready Высокопроизводительный токарный автомат
+                    INDEX C100
+                  </p>
+                </div>
+                <div className={styles.right}>
+                  <p className={`section_title ${styles.title} `}>
+                    развитие, применение новейших технологий и инновационных
+                    решений
+                  </p>
+                  <div className={styles.right_desc}>
+                    <p>
+                      ООО "AVANTEC GP" предоставляет свои услуги по обработке
+                      деталей с 2017 года. Грамотная организация
+                      производственных процессов и применение инновационных
+                      методов обработки позволяют существенно сократить рабочее
+                      время сохраняя при этом стабильно высокое качество деталей
+                    </p>
+                    <p>
+                      Современное оборудование, а также штат
+                      высококвалифицированных сотрудников позволяют фирме
+                      «Сергели Металл Конструкция» эффективно выполнять даже
+                      самые сложные заказы, в установленные сроки и с
+                      конкурентоспособной ценовой стратегией.
+                    </p>
+                  </div>
+                  <div className={styles.btm}>
+                    <button className="secondary_btn">Подробнее</button>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={styles.all}>
+                <p className={`section_title  ${styles.title_mb}`}>
+                  развитие, применение новейших технологий и инновационных
+                  решений
+                </p>
+                <div className={styles.left}>
+                  <div className={styles.img_cont}>
+                    <Image
+                      src="/media/product.png"
+                      width={503}
+                      height={328}
+                      alt=""
+                      className={styles.img}
+                    />
+                  </div>
+                  <p className={styles.left_desc}>
+                    iXpanel - i4.0 ready Высокопроизводительный токарный автомат
+                    INDEX C100
+                  </p>
+                </div>
+                <div className={styles.right}>
+                  <p className={`section_title ${styles.title} `}>
                     развитие, применение новейших технологий и инновационных
                     решений
                   </p>
@@ -266,7 +532,6 @@ export default function ProductSwiper() {
           </div>
         </div>
       </div>
-      <div>;</div>
     </section>
   );
 }

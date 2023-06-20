@@ -27,7 +27,7 @@ export default function Mission() {
           </div>
           <div className={styles.right}>
             <div className={styles.mission_topper}>
-              <p className="section_title">План осуществления проекта​​</p>
+              <p className={`section_title ${styles.title}`}>План осуществления проекта​​</p>
               <p className={`section_desc ${styles.topper_desc}`}>
                 Проект будет реализован в три этапа - в 2023 году планируется
                 производство 6 ед., обрабатывающих центров, с дальнейшим выходом

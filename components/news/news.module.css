@@ -90,3 +90,56 @@
   justify-content: center;
   gap: 8px;
 }
+.link_top_mb {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--interface-medium);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+
+  /* Facebook blue */
+
+  color: #1878f3;
+  padding: 16px 0;
+  width: 100%;
+  border: 1px solid #1878f3;
+}
+@media (max-width: 1300px) {
+  .news {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+    gap: 16px;
+  }
+}
+@media (max-width: 880px) {
+  .news {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+    gap: 16px;
+  }
+  .product_btm {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 16px;
+  }
+  .link_top {
+    display: none;
+  }
+  .link_top_mb {
+    display: flex;
+  }
+}
+@media (max-width: 500px) {
+  .news {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+    gap: 16px;
+  }
+}

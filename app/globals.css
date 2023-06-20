@@ -99,7 +99,7 @@ a {
   padding: 16px 40px;
   gap: 8px;
   background: #1878f3;
-  border: none;
+  border: 1px solid #1878f3;
   cursor: pointer;
 }
 .secondary_btn {
@@ -113,4 +113,45 @@ a {
   background: white;
   border: 1px solid #1878f3;
   cursor: pointer;
+}
+@media (max-width: 880px) {
+  main {
+    padding-top: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 95px;
+  }
+  .section_title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 110%;
+    color: #002856;
+    text-transform: uppercase;
+  }
+  .primary_btn {
+    font-family: var(--interface);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    padding: 16px 0;
+    width: 100%;
+  }
+  .secondary_btn {
+    font-family: var(--interface);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    padding: 16px 0;
+    width: 100%;
+  }
+  .section_desc {
+    font-family: var(--interface);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+  }
 }

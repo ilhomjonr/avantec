@@ -81,3 +81,60 @@
 .left_btn > svg {
   transform: rotate(180deg);
 }
+.title_mb {
+  display: none;
+}
+@media (max-width: 880px) {
+  .all {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: unset;
+  }
+  .navigation {
+    display: none;
+  }
+  .title {
+    display: none;
+  }
+  .title_mb {
+    display: block;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e3e3ed;
+  }
+  .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 16px;
+    gap: 40px;
+    border: 1px solid #ebebeb;
+    margin: 0;
+  }
+  .img_cont {
+    display: flex;
+    padding-bottom: 16px;
+  }
+  .left_desc {
+    font-family: var(--bebas);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: #020105;
+  }
+  .right {
+    padding: 0;
+    align-items: unset;
+  }
+  .right_desc {
+    font-family: var(--interface);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+    gap: 24px;
+    padding: 16px 0 24px 0;
+  }
+}

@@ -15,7 +15,7 @@ export default function Companies() {
     <section>
       <div className={`box ${styles.box}`}>
         <div className={styles.title_section}>
-          <p className="section_title">Наши партнеры</p>
+          <p className={`section_title ${styles.title}`}>Наши партнеры</p>
           <div className={styles.navigation}>
             <button
               className={styles.left}
@@ -33,15 +33,27 @@ export default function Companies() {
         </div>
         <div>
           <Swiper
+            modules={[Autoplay, Pagination, Navigation]}
+            breakpoints={{
+              0: {
+                slidesPerView: 1.5,
+                spaceBetween: 0,
+                centeredSlides: true,
+                pagination: true,
+              },
+              768: { slidesPerView: 3 },
+              1024: { slidesPerView: 4, pagination: false },
+              1440: { slidesPerView: 6 },
+              // 1300: { pagination: false },
+            }}
             spaceBetween={30}
             slidesPerView={6}
             loop={true}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-            }}
+            // autoplay={{
+            //   delay: 2500,
+            //   disableOnInteraction: false,
+            // }}
             navigation={{ prevEl, nextEl }}
-            modules={[Autoplay, Pagination, Navigation]}
             className={`${styles.mySwiper} mySwiper`}
           >
             <SwiperSlide>

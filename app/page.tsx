@@ -1,14 +1,21 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Intro from "@/components/intro/intro";
-import About from "@/components/about/about";
-import Mission from "@/components/mission/mission";
-import Form from "@/components/forms/form";
-import Products from "@/components/products/products";
-import News from "@/components/news/news";
-import Companies from "@/components/companies/companies";
-import ProductSwiper from "@/components/productswiper/product_swiper";
-import Contacts from "../components/contactus/contacts";
+import dynamic from "next/dynamic";
+const Intro = dynamic(() => import("../components/intro/intro"));
+const About = dynamic(() => import("../components/about/about"));
+const Mission = dynamic(() => import("../components/mission/mission"));
+const Form = dynamic(() => import("../components/forms/form"));
+const ProductSwiper = dynamic(
+  () => import("../components/productswiper/product_swiper")
+);
+const Products = dynamic(() => import("../components/products/products"));
+const Companies = dynamic(() => import("../components/companies/companies"));
+const News = dynamic(() => import("../components/news/news"));
+const Contacts = dynamic(() => import("../components/contactus/contacts"));
+export const metadata = {
+  title: "Avantec",
+  description: "Avantec",
+};
 
 export default function Home() {
   return (

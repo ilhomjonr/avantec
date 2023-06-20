@@ -7,7 +7,7 @@
   justify-content: space-between;
   flex-direction: row;
   width: 100%;
-  padding: 56px 0;
+  padding: 56px 16px;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -70,4 +70,31 @@
   justify-content: center;
   flex-direction: column;
   gap: 16px;
+}
+@media (max-width: 880px) {
+  .box {
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 16px;
+  }
+  .logo {
+    width: 121px;
+    height: 31px;
+  }
+  .contacts_btm {
+    font-family: var(--interface);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .foot_link {
+    font-family: var(--interface);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #7c8fa6;
+  }
 }

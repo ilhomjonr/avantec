@@ -1,6 +1,6 @@
 .things_top {
   display: flex;
-  align-items: flex-start;
+
   justify-content: center;
   flex-direction: column;
   width: 100%;
@@ -121,4 +121,132 @@
 .image > img {
   width: 100%;
   object-fit: cover;
+}
+.solution_mb {
+  display: none;
+  flex-direction: column;
+  padding: 0 16px;
+  border: 1px solid #ebebeb;
+}
+@media (max-width: 1300px) {
+  .things {
+    grid-template-columns: 1fr 1fr;
+  }
+  .top_info {
+    gap: 24px;
+    align-items: unset;
+    padding-top: 24px;
+  }
+  .solution_mb {
+    display: flex;
+  }
+  .solution {
+    display: none;
+  }
+  .image {
+    width: 100%;
+  }
+  .dids {
+    padding-bottom: 24px;
+  }
+}
+
+@media (max-width: 880px) {
+  .things {
+    grid-template-columns: 1fr 1fr;
+    border: 1.5px solid #ebebeb;
+    border-bottom: unset;
+  }
+  .thing:nth-child(odd),
+  .thing:nth-child(2) {
+    border-bottom: 1px solid #ebebeb;
+  }
+  .dids {
+  }
+  .section_title {
+    padding-top: 40px;
+  }
+  .btns {
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .didwhat {
+    padding: 20px 0;
+    gap: 12px;
+  }
+  /* .dids > .didwhat:nth-child(1),
+  .dids > .didwhat:nth-child(2) {
+    border-right: 1px solid #e3e3ed;
+    border-right: unset;
+  } */
+  .did_title {
+    font-family: var(--interface-medium);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #002856;
+  }
+  .did_desc {
+    font-family: var(--interface-medium);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #9a999b;
+  }
+  .did_numb {
+    font-family: var(--bebas);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 110%;
+    leading-trim: both;
+    text-edge: cap;
+    color: #002856;
+  }
+  .dids > .didwhat:nth-child(1) {
+    padding-right: 0;
+  }
+
+  .dids > .didwhat:nth-child(2) {
+    padding: 20px 20px;
+  }
+  .dids > .didwhat:nth-child(3) {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 520px) {
+  .things {
+    grid-template-columns: 1fr;
+    border: 1.5px solid #ebebeb;
+    border-bottom: unset;
+  }
+  .dids > .didwhat:nth-child(1),
+  .dids > .didwhat:nth-child(2) {
+    border-bottom: 1px solid #e3e3ed;
+    border-right: unset;
+  }
+  .dids {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+  }
+  .image > img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
+  .dids > .didwhat:nth-child(1) {
+    padding-right: 0;
+  }
+
+  .dids > .didwhat:nth-child(2) {
+    padding: 20px 0;
+  }
+  .dids > .didwhat:nth-child(3) {
+    padding-left: 0;
+  }
 }
