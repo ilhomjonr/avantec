@@ -32,7 +32,7 @@ export default function Products() {
           <motion.div
             initial="hide"
             whileInView="show"
-            exit="hide"
+            viewport={{ once: true, amount: 0.8 }}
             variants={productbtm}
           >
             <Link href={"/"} className={styles.product}>
@@ -53,7 +53,7 @@ export default function Products() {
           <motion.div
             initial="hide"
             whileInView="show"
-            exit="hide"
+            viewport={{ once: true, amount: 0.8 }}
             variants={productbtm}
           >
             <Link href={"/"} className={styles.product}>
@@ -74,7 +74,7 @@ export default function Products() {
           <motion.div
             initial="hide"
             whileInView="show"
-            exit="hide"
+            viewport={{ once: true, amount: 0.8 }}
             variants={productbtm}
           >
             <Link href={"/"} className={styles.product}>
@@ -95,7 +95,7 @@ export default function Products() {
           <motion.div
             initial="hide"
             whileInView="show"
-            exit="hide"
+            viewport={{ once: true, amount: 0.8 }}
             variants={productbtm}
           >
             <Link href={"/"} className={styles.product}>
@@ -116,7 +116,7 @@ export default function Products() {
           <motion.div
             initial="hide"
             whileInView="show"
-            exit="hide"
+            viewport={{ once: true, amount: 0.8 }}
             variants={productbtm}
           >
             <Link href={"/"} className={styles.product}>
@@ -137,7 +137,7 @@ export default function Products() {
           <motion.div
             initial="hide"
             whileInView="show"
-            exit="hide"
+            viewport={{ once: true, amount: 0.8 }}
             variants={productbtm}
           >
             <Link href={"/"} className={styles.product}>

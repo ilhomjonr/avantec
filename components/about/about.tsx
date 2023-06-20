@@ -75,7 +75,7 @@ export default function About() {
             initial="hide"
             whileInView="show"
             variants={about_left}
-            exit="hide"
+            viewport={{ once: true, amount: 0.8 }}
           >
             <div className={styles.top_info}>
               <p className={`${styles.section_title} section_title`}>
@@ -121,7 +121,7 @@ export default function About() {
             initial="hide"
             whileInView="show"
             variants={about_right}
-            exit="hide"
+            viewport={{ once: true, amount: 0.8 }}
           >
             <div className={styles.image}>
               <Image

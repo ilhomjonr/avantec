@@ -43,6 +43,7 @@ export default function Intro() {
               initial="hide"
               whileInView="show"
               variants={introHeaderVariantsRight}
+              viewport={{ once: true, amount: 0.8 }}
             >
               <div className={styles.info}>
                 <div className={styles.info_top}>
@@ -66,6 +67,7 @@ export default function Intro() {
               initial="hide"
               whileInView="show"
               variants={introHeaderVariantsLeft}
+              viewport={{ once: true, amount: 0.8 }}
             >
               {" "}
               <div className={styles.img_container}>

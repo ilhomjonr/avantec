@@ -61,6 +61,7 @@ export default function Form() {
           whileInView="show"
           exit="hide"
           variants={formleft}
+          viewport={{ once: true, amount: 0.8 }}
         >
           <div className={styles.left}>
             <p className={styles.title}>
@@ -77,6 +78,7 @@ export default function Form() {
           exit="hide"
           variants={formright}
           className={styles.form_cont}
+          viewport={{ once: true, amount: 0.8 }}
         >
           <div>
             <form className={styles.banner_form} onSubmit={handleRequest}>

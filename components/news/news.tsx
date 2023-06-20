@@ -32,7 +32,7 @@ export default function News() {
           <motion.div
             initial="hide"
             whileInView="show"
-            exit="hide"
+            viewport={{ once: true, amount: 0.8 }}
             variants={news}
           >
             <Link href={"/"} className={styles.new}>
@@ -63,7 +63,7 @@ export default function News() {
           <motion.div
             initial="hide"
             whileInView="show"
-            exit="hide"
+            viewport={{ once: true, amount: 0.8 }}
             variants={news}
           >
             <Link href={"/"} className={styles.new}>
@@ -94,7 +94,7 @@ export default function News() {
           <motion.div
             initial="hide"
             whileInView="show"
-            exit="hide"
+            viewport={{ once: true, amount: 0.8 }}
             variants={news}
           >
             <Link href={"/"} className={styles.new}>
@@ -125,7 +125,7 @@ export default function News() {
           <motion.div
             initial="hide"
             whileInView="show"
-            exit="hide"
+            viewport={{ once: true, amount: 0.8 }}
             variants={news}
           >
             <Link href={"/"} className={styles.new}>
