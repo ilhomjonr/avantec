@@ -28,7 +28,7 @@ export default function ProductSwiper() {
             loop={true}
             spaceBetween={30}
             autoplay={{
-              delay: 2500,
+              delay: 6000,
               disableOnInteraction: false,
             }}
             // pagination={true}

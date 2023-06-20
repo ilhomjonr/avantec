@@ -49,10 +49,10 @@ export default function Companies() {
             spaceBetween={30}
             slidesPerView={6}
             loop={true}
-            // autoplay={{
-            //   delay: 2500,
-            //   disableOnInteraction: false,
-            // }}
+            autoplay={{
+              delay: 6000,
+              disableOnInteraction: false,
+            }}
             navigation={{ prevEl, nextEl }}
             className={`${styles.mySwiper} mySwiper`}
           >

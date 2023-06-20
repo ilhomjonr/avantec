@@ -23,6 +23,8 @@ export default function Contacts() {
     setTimeout(() => {
       setIsSuccess(false);
     }, 2000);
+    setName("");
+    setNumber("");
   };
   return (
     <section>

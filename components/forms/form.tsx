@@ -51,6 +51,8 @@ export default function Form() {
     setTimeout(() => {
       setIsSuccess(false);
     }, 2000);
+    setName("");
+    setNumber("");
   };
   //
   return (
